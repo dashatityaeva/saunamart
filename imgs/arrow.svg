@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="15.907" viewBox="0 0 24 15.907">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="Arrow_Pointing_To_Right" data-name="Arrow Pointing To Right" class="cls-1" d="M1051.18,462.2l-6.72-6.886a1.027,1.027,0,0,0-1.48,0,1.1,1.1,0,0,0,0,1.522l4.93,5.049h-19.36a1.076,1.076,0,0,0,0,2.151h19.36l-4.93,5.049a1.1,1.1,0,0,0,0,1.522,1.027,1.027,0,0,0,1.48,0l6.72-6.886A1.094,1.094,0,0,0,1051.18,462.2Z" transform="translate(-1027.5 -455.031)"/>
+</svg>

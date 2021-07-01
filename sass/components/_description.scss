@@ -1,0 +1,30 @@
+.description {
+    padding: 45px 0;
+    &__name {
+        @include rr();
+        color: #c52f1a;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        letter-spacing: 0.01rem;
+    }
+    &__content {
+        @include rr();
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.01rem;
+    }
+    &__p {
+        &:not(:last-child) { 
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .description {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

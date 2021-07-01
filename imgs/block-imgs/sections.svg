@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Window_With_Different_Sections" data-name="Window With Different Sections" class="cls-1" d="M390.3,997H368.7a2.7,2.7,0,0,0-2.7,2.687v16.123a2.7,2.7,0,0,0,2.7,2.69h21.6a2.7,2.7,0,0,0,2.7-2.69V999.687A2.7,2.7,0,0,0,390.3,997Zm-6.75,18.81H368.7v-5.37h14.85v5.37Zm0-6.72H368.7v-5.37h14.85v5.37Zm6.75,6.72h-5.4v-12.09h5.4v12.09Z" transform="translate(-363 -994)"/>
+</svg>

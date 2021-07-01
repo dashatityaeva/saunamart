@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saunamart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <button class="menu-mb"><span></span></button>
+                <nav class="header__nav-header nav-header">
+                    <ul class="nav-header__list">
+                        <li class="nav-header__item"><a href="" class="nav-header__link">О Магазине</a></li>
+                        <li class="nav-header__item"><a href="" class="nav-header__link">Статьи</a></li>
+                        <li class="nav-header__item"><a href="" class="nav-header__link">Оптовикам</a></li>
+                        <li class="nav-header__item"><a href="" class="nav-header__link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="header__dropdown dropdown">
+                    <div class="select">
+                        <span>Выберите город</span>
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="city">
+                    <ul class="dropdown-menu">
+                        <li id="Krasnodar">Краснодар</li>
+                        <li id="Krasnodar2">Краснодар2</li>
+                    </ul>
+                </div>
+
+                <div class="header__identification">
+                    <a class="header__entrance" href="">Вход</a>
+                    <a class="header__sign-in" href="">Регистрация</a>
+                </div>
+
+                <!-- <button class="menu-mb"><span></span></button> -->
+            </div>
+            <div class="header__info">
+                <div class="header__logo-wrap">
+                    <img src="imgs/header/logo.png" alt="" class="header__logo">
+                </div>
+                <div class="header__info-wrap">
+                    <div class="header__working-mode">
+                        <span>пн-пт</span>
+                        <span>10.00 - 18.00</span>
+                    </div>
+                    <div class="header__phone-wrap">
+                        <a class="header__phone" href="tel:88612477437">8 (861) 247 74 37</a>
+                        <a href="" class="header__order-call">Заказать обратный звонок</a>
+                    </div>
+                    <div class="header__cart-wrap">
+                        <div class="header__cart"><span class="header__icon">12</span></div>
+                        <div class="header__cart-info">
+                            <span class="header__cart-name">Сумма:</span>
+                            <span class="header__total">13 700 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <img class="menu__img" src="imgs/menu/car.svg" alt="">
+                            <a class="menu__link" href="">Доставка</a></li>
+                        <li class="menu__item">
+                            <img class="menu__img" src="imgs/menu/garenty.svg" alt="">
+                            <a class="menu__link" href=""> Гарантия и Возврат</a></li>
+                        <li class="menu__item">
+                            <img class="menu__img" src="imgs/menu/question.svg" alt="">
+                            <a class="menu__link" href="">Как заказать?</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="layout">
+            <aside>
+                <nav class="catalog">
+                    <ul class="catalog__list">
+                        <li class="catalog__item catalog__item_hover catalog__item_has-subcatalog">
+                            <a class="catalog__link" href=""> Электрические печи</a>
+                            <nav class="catalog__subcatalog">
+                                <ul class="catalog__subcatalog-list">
+                                    <li class="catalog__subcatalog-item catalog__subcatalog-item_hover catalog__subcatalog-item_has-subcat1">
+                                        <a class="catalog__subcatalog-link" href="">Harvia</a>
+
+                                        <nav class="catalog__subcatalog-aside1">
+                                            <ul class="catalog__subcatalog-aside1-list">
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Harvia</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Sawo</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li class="catalog__subcatalog-aside1-item">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Tylo</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Sawo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Tylo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Аромагенераторы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="catalog__item catalog__item_hover catalog__item_has-subcatalog">
+                            <a class="catalog__link" href=""> Электрические печи222</a>
+                            <nav class="catalog__subcatalog">
+                                <ul class="catalog__subcatalog-list">
+                                    <li class="catalog__subcatalog-item catalog__subcatalog-item_hover catalog__subcatalog-item_has-subcat1">
+                                        <a class="catalog__subcatalog-link" href="">Harvia</a>
+
+                                        <nav class="catalog__subcatalog-aside1">
+                                            <ul class="catalog__subcatalog-aside1-list">
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Harvia</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Sawo</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li class="catalog__subcatalog-aside1-item">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Tylo</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class="catalog__subcatalog-item catalog__subcatalog-item_hover catalog__subcatalog-item_has-subcat1">
+                                        <a class="catalog__subcatalog-link" href="">Harvia</a>
+
+                                        <nav class="catalog__subcatalog-aside1">
+                                            <ul class="catalog__subcatalog-aside1-list">
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Harvia</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li
+                                                    class="catalog__subcatalog-aside1-item catalog__subcatalog-aside1-item_hover catalog__subcatalog-aside1-item_has-subcat-aside2">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Sawo</a>
+
+                                                    <nav class="catalog__subcatalog-aside2">
+                                                        <ul class="catalog__subcatalog-aside2-list">
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Harvia</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Sawo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo</a>
+                                                            </li>
+                                                            <li class="catalog__subcatalog-aside2-item">
+                                                                <a class="catalog__subcatalog-aside2-link"
+                                                                    href="">Tylo1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </li>
+                                                <li class="catalog__subcatalog-aside1-item">
+                                                    <a class="catalog__subcatalog-aside1-link" href="">Tylo</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Sawo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Tylo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Аромагенераторы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="catalog__item catalog__item_hover catalog__item_has-subcatalog">
+                            <a class="catalog__link" href="">Защитные элементы</a>
+                            <nav class="catalog__subcatalog">
+                                <ul class="catalog__subcatalog-list">
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Harvia</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Sawo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Tylo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Аромагенераторы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="catalog__item catalog__item_hover catalog__item_has-subcatalog">
+                            <a class="catalog__link" href="">Парогенераторы</a>
+                            <nav class="catalog__subcatalog">
+                                <ul class="catalog__subcatalog-list">
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Harvia</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Sawo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Tylo</a>
+                                    </li>
+                                    <li class="catalog__subcatalog-item">
+                                        <a class="catalog__subcatalog-link" href="">Аромагенераторы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Пульты управления </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href=""> Дровяные печи</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Освещение</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href=""> Пиломатериалы</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Двери</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href=""> Инфракрасные кабины </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Готовые сауны</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Аксессуары</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Гималайская соль</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Камни</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="">Талькохлорит</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="sale">
+                    <h3 class="sale__title">Распродажа</h3>
+                    <a href="" class="sale__item-link">
+                        <div class="sale__img-wrap">
+                            <img src="imgs/cards/img2.png" alt="" class="sale__img">
+                        </div>
+                        <p class="sale__name">HARVIA <br> Дровяная печь WKM3 Harvia M3</p>
+                    </a>
+                    <div class="sale__content">
+                        <div class="sale__info">
+                            <div class="sale__price-wrap">
+                                <span class="sale__price">30 266 ₽</span>
+                            </div>
+                            <span class="sale__busket"><span class="sale__busket-icon"></span><span
+                                    class="sale__busket-text">Купить</span></span>
+                        </div>
+                        <a class="sale__link" href="">Смотреть все</a>
+                    </div>
+
+                </div>
+            </aside>
+
+            <main>
+                <section class="banner">
+                    <div class="banner__item">
+                        <img src="imgs/banner/slider-img1.jpg" alt="" class="banner__img">
+                        <p class="banner__text">Оборудование для саун и бань</p>
+                        <a href="" class="banner__link">Подробнее</a>
+                    </div>
+                    <div class="banner__item">
+                        <img src="imgs/banner/slider-img1.jpg" alt="" class="banner__img">
+                        <p class="banner__text">Оборудование для бань</p>
+                        <a href="" class="banner__link">Подробнее</a>
+                    </div>
+                    <div class="banner__item">
+                        <img src="imgs/banner/slider-img1.jpg" alt="" class="banner__img">
+                        <p class="banner__text">Оборудование для саун</p>
+                        <a href="" class="banner__link">Подробнее</a>
+                    </div>
+                </section>
+                <section class="cards">
+                    <div class="block-title">
+                        <div class="block-title__img-wrap">
+                            <img class="block-title__img" src="imgs/block-imgs/sales.svg" alt="">
+                        </div>
+                        <p class="block-title__text">специальные предложения</p>
+                    </div>
+                    <div class="cards__slider">
+                        <div class="cards__item">
+                            <a class="cards__item-link" href="">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA <br> Дровяная печь WK150LD Legend 150</p>
+                            </a>
+
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img2.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA <br> Дровяная печь WKM3 Harvia M3</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">30 266 ₽</span>
+                                        <span class="cards__price-old">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img3.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Двери стеклянные 7/19 коробка сосна, бронза D71901М</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">10 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img2.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WKM3 Harvia M3</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">30 266 ₽</span>
+                                        <span class="cards__price-old">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WK150LD Legend 150</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WK150LD Legend 150</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="block-title block-title_gr">
+                        <div class="block-title__img-wrap">
+                            <img class="block-title__img" src="imgs/block-imgs/sections.svg" alt="">
+                        </div>
+                        <p class="block-title__text">Выберите интересующий вас раздел</p>
+                    </div>
+                    <div class="section">
+                        <div class="section__row">
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img1.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Электрические печи</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"><a href="" class="section__link">Harvia</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Sawo</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Helo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img2.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Защитные элементы</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"><a href="" class="section__link">ТЭНы Harvia</a>
+                                        </li>
+                                        <li class="section__list-item"><a href="" class="section__link">ТЭНы Sawo</a>
+                                        </li>
+                                        <li class="section__list-item"><a href="" class="section__link">ТЭНы Helo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__row">
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img3.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Пульты управления</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"><a href="" class="section__link">Harvia</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Sawo</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Helo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img4.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Парогенераторы</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"><a href="" class="section__link">Harvia</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Sawo</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Helo</a></li>
+                                        <li class="section__list-item"><a href=""
+                                                class="section__link">Аромагенераторы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__row">
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img5.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Дровяные печи</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"> <a href="" class="section__link">Harvia</a></li>
+                                        <li class="section__list-item"> <a href="" class="section__link">Kastor</a></li>
+                                        <li class="section__list-item"> <a href="" class="section__link">Helo</a></li>
+                                        <li class="section__list-item"> <a href="" class="section__link">Защитные
+                                                элементы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section__item">
+                                <div class="section__wrap-img">
+                                    <img src="imgs/sections/img6.png" alt="" class="section__img">
+                                </div>
+                                <div class="section__content">
+                                    <h3 class="section__name">Освещение</h3>
+                                    <ul class="section__list">
+                                        <li class="section__list-item"><a href="" class="section__link">Освещение
+                                                Cariitti</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Светильники</a>
+                                        </li>
+                                        <li class="section__list-item"><a href="" class="section__link">Абажуры</a></li>
+                                        <li class="section__list-item"><a href="" class="section__link">Провода</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cards cards_new">
+                    <div class="block-title block-title_wh">
+                        <div class="block-title__img-wrap">
+                            <img class="block-title__img" src="imgs/block-imgs/clock.svg" alt="">
+                        </div>
+                        <p class="block-title__text">новинки</p>
+                    </div>
+                    <div class="cards__slider">
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA <br> Дровяная печь WK150LD Legend 150</p>
+                            </a>
+
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img2.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA <br> Дровяная печь WKM3 Harvia M3</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">30 266 ₽</span>
+                                        <span class="cards__price-old">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img3.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Двери стеклянные 7/19 коробка сосна, бронза D71901М</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">10 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket cards__busket_sold-out"><span
+                                            class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img2.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WKM3 Harvia M3</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">30 266 ₽</span>
+                                        <span class="cards__price-old">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WK150LD Legend 150</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <a href="" class="cards__item-link">
+                                <div class="cards__img-wrap">
+                                    <img src="imgs/cards/img1.png" alt="" class="cards__img">
+                                </div>
+                                <p class="cards__name">HARVIA Дровяная печь WK150LD Legend 150</p>
+                            </a>
+                            <div class="cards__content">
+                                <div class="cards__info">
+                                    <div class="cards__price-wrap">
+                                        <span class="cards__price">15 266 ₽</span>
+                                    </div>
+                                    <span class="cards__busket"><span class="cards__busket-icon"></span><span
+                                            class="cards__busket-text">Купить</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="description">
+                    <h2 class="description__name">Строительство бань и саун (текст в 1600 символов)</h2>
+                    <div class="description__content">
+                        <p class="description__p">Наша компания на протяжении 5 лет профессионально занимается отделкой
+                            русских бань, строительством саун и хаммамов (турецких бань), а также установкой
+                            инфракрасных саун, в частности ИК кабин. Огромный опыт, наработанный за много лет практики в
+                            этом направлении, позволяем нам с уверенностью заявлять, что мы лучшие в области
+                            сауностроительства.</p>
+                        <p class="description__p">Наша компания выполняет весь спектр строительных работ по возведению
+                            разных типов парных помещений. В перечне наших услуг строительство сауны и хаммама «под
+                            ключ», а также строительство русских бань по персональным и нестандартным проектам, для
+                            индивидуального и общественного пользования, в Краснодаре и Краснодарском Крае. Компания
+                            «Saunamart», в короткие сроки построит сауну, турецкую или русскую баню любой сложности,
+                            произведёт внутреннюю отделку согласно пожеланиям клиента, а также установит инфракрасную
+                            сауну (инфракрасную кабину) в квартире, частном коттедже, фитнес клубе или оздоровительном
+                            комплексе.</p>
+                        <p class="description__p">Помимо того, что наша компания строит сауны, хаммамы и бани на заказ,
+                            мы продаём всё необходимое для самостоятельного возведения парильного помещения без помощи
+                            профессионалов. Мы предлагаем оборудование для сауны, русской бани, хаммама, дровяные печи и
+                            печки-камины, электрические печи (финского и шведского производства), различные строительные
+                            материалы, среди которых вагонка липа, ольха, кедр, абаш и доска абаши, которая используется
+                            для полати в парилке.</p>
+                        <p class="description__p">Кроме того мы предлагаем высококачественные двери для саун и бань,
+                            оригинального дизайна, различной цветовой гаммы, с фьюзингом или рисунком, выполненные из
+                            дерева или стекла.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__logo-col">
+                    <div class="footer__logo-wrap">
+                        <img src="imgs/header/logo.png" alt="" class="footer__logo">
+                    </div>
+                    <div class="footer__tagline-wrap">
+                        <a href="" class="footer__link">saunayug.ru</a>
+                        <span class="footer__link-descr">Строительство бань</span>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link-menu" href="">Доставка</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">Гарантия и Возврат</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">О Магазине</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">Как заказать?</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">Оптовикам</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">Контакты</a></li>
+                        <li class="footer__item"><a class="footer__link-menu" href="">Распродажа</a></li>
+                    </ul>
+                    <div class="footer__contacts">
+                        <span class="footer__city">Краснодар</span>
+                        <div class="footer__phone-wrap">
+                            <a class="footer__phone" href="tel:88612477437">8 (861) 247 74 37</a>
+                            <a href="" class="footer__order-call">Заказать обратный звонок</a>
+                        </div>
+                        <p class="footer__copy">&#169; SaunaMart.ru - Оборудование для cаун и бань, 2015</p>
+                    </div>
+                    <div class="footer__socials">
+                        <span class="footer__socials-name">Поделиться:</span>
+                        <div class="footer__socials-group">
+                            <div class="footer__socials-item" title="Вконтакте">
+                                <a href="" class="footer__socials-link footer__socials-link_vk">
+                                    <img class="footer__link-img" src="imgs/socials/vk.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__socials-item" title="Одноклассники">
+                                <a href="" class="footer__socials-link footer__socials-link_odc">
+                                    <img class="footer__link-img" src="imgs/socials/odnoklassniki.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__socials-item" title="Facebook">
+                                <a href="" class="footer__socials-link footer__socials-link_fb">
+                                    <img class="footer__link-img" src="imgs/socials/facebook.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <span class="developer">Разработка сайта: <a class="developer__link" href="adverbs.ru"
+                                title="Сайт разработчиков">adverbs.ru</a></span>
+                        <p class="footer__copy footer__copy_mb">&#169; SaunaMart.ru - Оборудование для cаун и бань, 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

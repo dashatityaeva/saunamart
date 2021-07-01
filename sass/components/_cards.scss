@@ -1,0 +1,145 @@
+.cards {
+    background-color: #ffffff;
+
+    &__slider {
+        // display: flex;
+        position: relative;
+
+        .slick-arrow {
+            top: 0;
+        }
+    }
+
+    &__item-link {
+        &:hover {
+            .cards__name {
+                border-bottom: 1px solid #333333;
+            }
+        }
+
+    }
+
+    &__item {
+        cursor: pointer;
+        // width: 33.33%;
+        padding: 20px 20px 35px 20px;
+        // min-width: 0;
+        background-color: #ffffff;
+
+        &:not(:nth-child(3n+3)) {
+            border-right: 1px solid #e5e5e5;
+        }
+
+        &:hover {
+            // background-color: rgba(203, 203, 202, 0.05%);
+            background-color: #f2f2f2;
+
+
+        }
+    }
+
+    &__img-wrap {
+        height: 210px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 100%;
+        // width: 100%;
+        object-fit: cover;
+        object-position: center
+    }
+
+    &__name {
+        @include rr();
+        font-size: 16px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        display: inline;
+        color: #333333;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__price-wrap {
+        display: flex;
+        flex-direction: column
+    }
+
+    &__price {
+        @include rb();
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    &__price-old {
+        @include rr();
+        font-size: 14px;
+        line-height: 1.2;
+        text-decoration: line-through;
+        color: #999999;
+    }
+
+    &__busket {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        height: 30px;
+
+        &_sold-out {
+
+            .cards__busket-icon,
+            .cards__busket-text {
+                background-color: #cccccc;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: #cccccc;
+                    color: #ffffff;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
+    &__busket-icon {
+        width: 30px;
+        height: 100%;
+        background-color: #d13722;
+        background-image: url(../imgs/header/cart.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 14px;
+        background-position: center center;
+        position: relative;
+        margin-right: 2px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__busket-text {
+        @include rm();
+        padding-left: 6px;
+        padding-right: 10px;
+        font-style: italic;
+        color: #d13722;
+        font-size: 14px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #d13722;
+            color: #ffffff;
+        }
+    }
+
+}
